@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-color': "#FF1F3D",
+              }
+            }
+          }
+        }
+    </script>
+
+</head>
+
+<body>
+    <header class="container mx-auto">
+        <div class="flex justify-between my-4">
+            <img class="bg-white" src="images/Logo.png" alt="">
+            <button class="btn">Sort by view</button>
+            <button onclick="window.open('question-ans.html','_black');" class="btn bg-btn-color">Blog</button>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <section class="mt-5">
+            <div class="flex justify-center gap-6" id="sub-nav">
+
+            </div>
+
+        </section>
+        <section id="data-container" class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5">
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
